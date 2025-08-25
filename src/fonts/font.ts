@@ -25,4 +25,13 @@ const roboto = Roboto({
   variable: '--font-roboto', // optional, for using as a CSS variable
 });
 
-export {inter,bungeeTint,pacifico,roboto}
+
+
+import { DynaPuff } from 'next/font/google';
+
+const dynapuff = DynaPuff({
+  subsets: ['latin'], // Or other subsets if needed
+  // weight: ['400'], // Specify weights if Dynapuff has multiple options
+});
+
+export {inter,bungeeTint,pacifico,roboto,dynapuff}
