@@ -18,5 +18,11 @@ const pacifico = Pacifico({
   weight: "400", // Only one weight is available for Pacifico
 });
 
+import { Roboto } from 'next/font/google';
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'], // you can include other weights too
+  variable: '--font-roboto', // optional, for using as a CSS variable
+});
 
-export {inter,bungeeTint,pacifico}
+export {inter,bungeeTint,pacifico,roboto}
